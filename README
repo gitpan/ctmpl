@@ -1,0 +1,50 @@
+CTmpl version 2.00
+==================
+
+The README is used to introduce the module and provide instructions on
+how to install the module, any machine dependencies it may have (for
+example C compilers and installed libraries) and any other information
+that should be provided before the module is installed.
+
+A README file is required for CPAN modules since CPAN extracts the
+README file from a module distribution so that people browsing the
+archive can use it get an idea of the modules uses. It is usually a
+good idea to provide version information here so that people can
+decide whether fixes for the module are worth downloading.
+
+INSTALLATION
+
+To install this module type the following:
+
+   perl Makefile.PL
+or
+   perl Makefile.PL -t -f
+   
+   make
+   make test
+   make install
+
+DEPENDENCIES
+
+This module requires these other modules and libraries if u want to use them:
+
+  google perftools uses -ltcmalloc with switch -t
+  google dense_hash_map uses with switch -f
+
+Switches:
+  -f - Use it if your project has a lot of templates, more than 20
+  -t - Always use if there is a possibility
+  
+converter/convert.pl - The tool will convert the templates of HTML::Template
+  
+COPYRIGHT AND LICENCE
+
+Freeware
+
+Copyright (C) 2007 by E. V. Stolyarenko
+
+This library is free software; you can redistribute it and/or modify
+it under the same terms as Perl itself, either Perl version 5.8.4 or,
+at your option, any later version of Perl 5 you may have available.
+
+
